@@ -1,0 +1,162 @@
+<html>
+<head> 
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+</head>
+<body>
+ 
+ <!-- Simple header with fixed tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+		<i class="material-icons md-48 orange600">code</i>
+      <span class="mdl-layout-title" >MDL + Node Site </span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Form</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">List</a>
+      <a href="#fixed-tab-3" class="mdl-layout__tab">Info</a>
+    </div>
+  </header>
+ 
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content"><!-- Your content goes here -->
+	      <div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--4-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col">
+
+				<form action="http://127.0.0.1:8081/process_get" method="GET">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					    <input class="mdl-textfield__input" type="text" id="sample3">
+					    <label class="mdl-textfield__label" for="sample3">First name...</label>
+					</div>
+
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					    <input class="mdl-textfield__input" type="text" id="sample3">
+					    <label class="mdl-textfield__label" for="sample3">Last name...</label>
+					</div>
+					<input class="mdl-button mdl-js-button mdl-button--primary"  value="Send Form">
+				</form>
+			</div>
+			  <div class="mdl-cell mdl-cell--4-col"></div>
+			</div>
+      </div>
+    </section>
+
+
+
+    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content"><!-- Your content goes here -->
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--4-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col">
+				<table class="mdl-data-table mdl-js-data-table">
+				  <thead>
+				    <tr>
+				      <th class="mdl-data-table__cell--non-numeric">Name</th>
+				      <th class="mdl-data-table__cell--non-numeric">Nickname</th>
+				      <th>Age</th>
+				      <th class="mdl-data-table__cell--non-numeric">Living?</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td class="mdl-data-table__cell--non-numeric">John Lennon</td>
+				      <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+				      <td>40</td>
+				      <td class="mdl-data-table__cell--non-numeric">No</td>
+				    </tr>
+				    <tr>
+				      <td class="mdl-data-table__cell--non-numeric">Paul McCartney</td>
+				      <td class="mdl-data-table__cell--non-numeric">The cute one</td>
+				      <td>73</td>
+				      <td class="mdl-data-table__cell--non-numeric">Yes</td>
+				    </tr>
+				    <tr>
+				      <td class="mdl-data-table__cell--non-numeric">George Harrison</td>
+				      <td class="mdl-data-table__cell--non-numeric">The shy one</td>
+				      <td>58</td>
+				      <td class="mdl-data-table__cell--non-numeric">No</td>
+				    </tr>
+				    <tr>
+				      <td class="mdl-data-table__cell--non-numeric">Ringo Starr</td>
+				      <td class="mdl-data-table__cell--non-numeric">The funny one</td>
+				      <td>74</td>
+				      <td class="mdl-data-table__cell--non-numeric">Yes</td>
+				    </tr>
+				  </tbody>
+				</table>
+
+			</div>
+			  <div class="mdl-cell mdl-cell--4-col"></div>
+			</div> 
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+      <div class="page-content"><!-- Your content goes here -->
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--4-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col">
+
+
+			  	<!-- Wide card with share menu button -->
+				<style>
+				.demo-card-wide.mdl-card {
+				  width: 512px;
+				} 
+				.demo-card-wide > .mdl-card__menu {
+				  color: #fff;
+				}
+				</style>
+
+				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+				  <div class="mdl-card__title">
+				    <h2 class="mdl-card__title-text">Welcome</h2>
+				  </div>
+				  <div class="mdl-card__supporting-text">
+				    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				    Mauris sagittis pellentesque lacus eleifend lacinia...
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+				    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+				      Get Started
+				    </a>
+				  </div>
+				  <div class="mdl-card__menu">
+				    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+				      <i class="material-icons">share</i>
+				    </button>
+				  </div>
+				</div>
+ 
+			  </div>
+			  <div class="mdl-cell mdl-cell--4-col"></div>
+		</div> 
+	</div>
+    </section>
+  </main>
+
+
+
+    <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">Title</div>
+        <ul class="mdl-mini-footer__link-list">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+        </ul>
+      </div>
+    </footer>
+
+	
+
+
+</div>
+</body>
+</html>
