@@ -1,0 +1,2 @@
+Just remember this is all a test, and to run node must launch the command 
+node main or node_test
